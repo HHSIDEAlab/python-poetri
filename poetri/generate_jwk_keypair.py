@@ -19,8 +19,8 @@ if __name__ == "__main__":
 
     if len(sys.argv) != 2:
         print("Usage:")
-        print("generate_poet_keypair.py [KID]")
-        print("generate_poet_keypair.py example.com")
+        print("generate_jwk_keypair.py [KID]")
+        print("generate_jwk_keypair.py example.com")
         sys.exit(1)
     kid = sys.argv[1]
     result = gen_jwk_keypair(kid=kid)
